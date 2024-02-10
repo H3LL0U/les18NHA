@@ -1,0 +1,77 @@
+
+
+    
+
+
+header{
+    display: flex;
+    width: 100%;
+    font-family: "Protest Strike";
+    
+    background-color: red;
+    justify-content: center;
+    background-image: url("../afbeeldingen/groningen.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position-y: center;
+    color:cyan;
+    
+}
+.central_container{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 25px;
+    border: yellowgreen solid 4px;
+}
+.central_part{
+
+    padding-right: 50px;
+    padding-left: 20px;
+    border-radius: inherit;
+    font-size: 25px;
+    
+    border: solid black 4px;
+    
+    margin: inherit;
+    display: flex;
+    text-align: justify;
+    float: left;
+    background-color: yellow;
+    display: block;
+    height: fit-content;
+    min-width: 150px;
+}
+
+td{
+    vertical-align:top;
+}
+.inhoud h1{
+    text-align: center;
+    font-size: 5vw;
+}
+img{
+    
+    float: right;
+    display: inline;
+    width: 50%;
+}
+
+th{
+    text-align: center;
+}
+footer p{
+    float: left;
+    padding: 5px;
+    background-color: aqua;
+    border: 2px blueviolet solid;
+    align-self: center;
+}
+
+@media only screen and (min-width:768px) {
+    img{
+        width: 250px;
+    }
+}

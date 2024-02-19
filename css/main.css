@@ -20,33 +20,42 @@ header{
 .central_container{
     background-color: antiquewhite;
     display: flex;
-    justify-content: center;
+    
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
     margin: 3px;
     padding: 3px;
     border-radius: 25px;
     border: yellowgreen solid 4px;
 }
 .central_part{
-
-    padding-right: 50px;
+    align-self: center;
+    padding-right: 100px;
     padding-left: 20px;
-    border-radius: inherit;
-    font-size: 25px;
+    border-radius: 25px;
+    font-size: 4.5vw;
+    justify-content: center;
     
     border: solid black 4px;
     
-    margin: inherit;
+    margin: 3px;
     display: flex;
-    text-align: justify;
-    float: left;
+    text-align: center;
+    
     background-color: yellow;
     display: block;
     height: fit-content;
     min-width: 150px;
 }
 
+#facts{
+    width: 100%;
+}
+
 td{
     vertical-align:top;
+    padding: 10px;
 }
 .inhoud h1{
     text-align: center;
@@ -57,6 +66,7 @@ img{
     float: right;
     display: inline;
     width: 50%;
+    min-width: 250px;
 }
 
 th{
@@ -68,10 +78,55 @@ footer p{
     background-color: aqua;
     border: 2px blueviolet solid;
     align-self: center;
+    width: 100%;
+    font-size: 2em;
+}
+.fill-image{
+    padding: 5px;
+    min-width: 200px;
+    max-width: 100%;
+    display: none;
+    
+    
+    
+    
+
 }
 
-@media only screen and (min-width:768px) {
-    img{
-        width: 250px;
+
+@media only screen and (min-width:1000px) {
+
+    .central_part {
+        font-size: 30px;
+        width: 66%;
+
+        
     }
+    .central_container{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        vertical-align: top;
+    }
+    #facts{
+        width: 33%;
+        align-self: flex-start;
+
+    }
+    .fill-image{
+        display: inline;
+        
+    }
+
+
+
+}
+@media only screen and (min-width:768px) {
+    .central_part {
+        font-size: 30px;
+        
+
+        
+    }
+    
 }
